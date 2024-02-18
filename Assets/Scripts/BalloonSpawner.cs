@@ -5,8 +5,8 @@ using System.Text;
 
 public class BalloonSpawner : MonoBehaviour
 {
-    public GameObject blueBalloonPrefab;
-    public GameObject greenBalloonPrefab;
+    public GameObject purpleBalloonPrefab;
+    public GameObject yelllowBalloonPrefab;
     public GameObject redBalloonPrefab;
 
     void Start()
@@ -31,13 +31,13 @@ public class BalloonSpawner : MonoBehaviour
             float speed = float.Parse(parts[3]);
 
             GameObject balloonPrefab = null;
-            if (color == "blue")
+            if (color == "Purple")
             {
-                balloonPrefab = blueBalloonPrefab;
+                balloonPrefab = purpleBalloonPrefab;
             }
-            else if (color == "green")
+            else if (color == "Yellow")
             {
-                balloonPrefab = greenBalloonPrefab;
+                balloonPrefab = yellowBalloonPrefab;
             }
             else if (color == "red")
             {
