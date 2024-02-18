@@ -5,8 +5,8 @@ import random
 HOST = "localhost"  # IP address of the machine running Unity
 PORT = 34999        # Port to listen on
 
-colors = ['blue', 'green', 'red']
-speeds = [0.5, 0.8, 1.0]  # Speeds for blue, green, and red balloons
+colors = ['Purple', 'Yellow', 'Red']
+speeds = [0.5, 0.8, 1.0]  # Speeds for Purple, Yellow, and Red balloons
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.bind((HOST, PORT))
